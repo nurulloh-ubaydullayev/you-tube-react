@@ -1,0 +1,43 @@
+.navbar {
+  width: 100%;
+  // min-width: 205px;
+  max-width: 205px;
+  height: 671px;
+  padding-bottom: 40px;
+  // height: 800px;
+  overflow: auto;
+}
+
+.settings-link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 5px;
+  background-color: #717171;
+  border: 1px solid turquoise;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}

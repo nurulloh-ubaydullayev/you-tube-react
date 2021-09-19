@@ -1,0 +1,24 @@
+.videos-pages-list {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.videos-list__item + .videos-list__item {
+  margin-top: 28px;
+}
+
+.videos-list__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+
+  svg {
+    margin-right: 15px;
+  }
+}

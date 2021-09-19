@@ -1,0 +1,102 @@
+.home {
+  width: 100%;
+  min-width: 1300px;
+  height: 100%;
+  max-height: 620px;
+  padding-left: 20px;
+  overflow: auto;
+}
+
+.dollie__channel-header {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.dollie__img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.dollie__channel-name {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+}
+
+.prev-next-wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-left: 40px;
+  margin-right: 149px;
+}
+
+.prev-next-wrapper {
+  width: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev-next-btn {
+  border: none;
+  outline: none;
+  background-color: #00000011;
+  border-radius: 50%;
+  cursor: pointer;
+  svg {
+    display: block;
+  }
+}
+
+.prev-btn {
+  padding: 8px 11px 9px 10px;
+}
+
+.next-btn {
+  padding: 8px 10px 9px 11px;
+}
+
+.recommended__text {
+  margin-left: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+
+.recommended__subscribe {
+  margin-left: auto;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: red;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 475px) {
+  .home {
+    padding-bottom: 120px;
+    min-width: 100px;
+    max-width: 300px;
+    padding-left: 0;
+  }
+
+  .dollie__channel-header {
+    display: none;
+  }
+
+  .dollie-videos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

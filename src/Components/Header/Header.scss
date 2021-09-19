@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-right: 70px;
+}
+
+.header__left {
+  position: relative;
+  width: 100%;
+  max-width: 1053px;
+  display: flex;
+  align-items: center;
+}
+
+.you-tube-logo {
+  // display: block;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.settings-icon {
+  width: 20px;
+  height: 17px;
+  margin-right: 28px;
+}
+
+.header__search-form {
+  position: relative;
+  width: 100%;
+  max-width: 830px;
+  margin-left: auto;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 830px;
+  padding: 12px 23px;
+  padding-right: 40px;
+  border: none;
+  outline: none;
+  background: #fafafa;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-17px, 12px);
+}
+
+.search-input::placeholder {
+  color: #30384c;
+  opacity: 0.4;
+}
+
+.header__right {
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.owner__features {
+  width: 100%;
+  max-width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-right: 30px;
+  }
+
+  .header__features-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header__avatar {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+  }
+
+  .header__right {
+    max-width: 180px;
+  }
+
+  .owner__features {
+    max-width: 120px;
+  }
+
+  .header__search-icon {
+    width: 14px;
+    height: 14px;
+    transform: translate(-12px, 11px);
+  }
+
+  .search-input {
+    padding: 8px 18px;
+    padding-right: 28px;
+  }
+
+  .you-tube-logo {
+    width: 90px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .header__right {
+    max-width: 60px;
+    justify-content: end;
+  }
+
+  .settings-icon {
+    display: none;
+  }
+
+  .owner__features {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .header {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .search-input {
+    display: none;
+  }
+
+  .header__search-icon {
+    transform: translate(15px, -6px);
+  }
+}

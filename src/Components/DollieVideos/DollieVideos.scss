@@ -1,0 +1,72 @@
+.dollie__videos-list {
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 49px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  // flex-direction: row;
+}
+
+.dollie__video-link {
+  width: 100%;
+  min-width: 250px;
+  text-decoration: none;
+
+  span {
+    font-size: 13px;
+    line-height: 16px;
+    color: #c2c2c2;
+  }
+
+  span + span {
+    margin-left: 50px;
+  }
+}
+
+.dollie__video-img {
+  margin-bottom: 10px;
+  border-radius: 14px;
+}
+
+.dollie__video {
+  width: 100%;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.dollie__video + .dollie__video {
+  margin-left: 40px;
+}
+
+.dollie__video-title {
+  margin-bottom: 4px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #19202c;
+}
+
+@media only screen and (max-width: 475px) {
+  .dollie__videos-list {
+    max-width: 250px;
+    // margin-right: 0 !important;
+    margin: auto;
+    // margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dollie__video + .dollie__video {
+    min-width: 100px;
+    margin-left: 0;
+    margin: auto;
+  }
+}
