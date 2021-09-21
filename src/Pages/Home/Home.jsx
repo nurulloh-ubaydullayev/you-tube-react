@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import { NavLink } from "react-router-dom";
 
 // Images
 import DollieImg from "../../Assets/Images/dollie.png";
@@ -16,14 +17,16 @@ function Home() {
     <div className="home">
       <div className="dollie-videos">
         <div className="dollie__channel-header">
-          <img
-            className="dollie__img"
-            src={DollieImg}
-            alt="Dollie blair "
-            width={50}
-            height={50}
-          />
-          <h3 className="dollie__channel-name">Dollie Blairs</h3>
+          <NavLink className="link-channel" to="/channel">
+            <img
+              className="dollie__img"
+              src={DollieImg}
+              alt="Dollie blair "
+              width={50}
+              height={50}
+            />
+            <h3 className="dollie__channel-name">Dollie Blairs</h3>
+          </NavLink>
           <div className="prev-next-wrapper">
             <button className="prev-btn prev-next-btn">
               <Prev />

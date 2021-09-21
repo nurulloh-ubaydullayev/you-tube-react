@@ -5,6 +5,8 @@ import { Switch, Route, NavLink } from "react-router-dom";
 // Pages
 import Home from "./Pages/Home/Home";
 import Channel from "./Pages/Channel/Channel";
+import Empty from "./Components/Empty/Empty";
+import Video from "./Pages/Video/Video";
 
 // Images
 import HomeIcon from "./Components/Lib/Svg/homeIcon";
@@ -22,11 +24,16 @@ function App() {
       <div className="container">
         <Header />
         <main className="main">
-          <Navbar />
+          <Switch>
+            <Route path="/" component={Navbar} exact />
+            <Route path="/channel" component={Navbar} exact />
+            <Route path="/video" component={Empty} exact />
+          </Switch>
 
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/channel" component={Channel} exact />
+            <Route path="/video" component={Video} />
           </Switch>
         </main>
       </div>

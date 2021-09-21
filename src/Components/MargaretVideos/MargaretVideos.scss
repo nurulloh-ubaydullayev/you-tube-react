@@ -1,0 +1,60 @@
+.margaret__videos {
+  width: 100%;
+  max-width: 100%;
+}
+
+.margaret__videos__list {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.margaret__item__img {
+  border-radius: 14px;
+}
+
+.margaret__list__item {
+  width: 100%;
+  max-width: 250px;
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    overflow: hidden;
+    color: #19202c;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #c2c2c2;
+  }
+}
+
+.margaret__list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 475px) {
+  .margaret__videos__list {
+    flex-direction: column;
+  }
+
+  .margaret__list__item:not(:last-child) {
+    margin-right: 0;
+  }
+}

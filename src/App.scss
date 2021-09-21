@@ -92,9 +92,12 @@ h1 {
 }
 
 .main {
+  height: 100%;
+  max-height: 672px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  overflow: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

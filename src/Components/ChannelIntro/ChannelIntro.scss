@@ -1,0 +1,182 @@
+.channel__intro {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.channel__intro-content {
+  width: 100%;
+  max-width: 1120px;
+}
+
+.channel__navbar {
+  width: 100%;
+  max-width: 834px;
+  display: flex;
+  margin-bottom: 54px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.channel__navbar__list {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.channel__navbar__link {
+  display: inline-block;
+  margin-bottom: 3px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.channel__navbar__item:first-child {
+  border-bottom: 3px solid #ff0000;
+  .channel__navbar__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ff0000;
+  }
+}
+
+.popular__video {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular__video__img {
+  width: 60%;
+  max-width: 540px;
+  height: auto;
+  object-fit: cover;
+}
+
+.popular__video-description {
+  //   width: 100%;
+  width: 548px;
+  //   max-width: 548px;
+  margin-left: 30px;
+
+  h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    color: #19202c;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #c2c2c2;
+  }
+}
+
+.channel__recommendeds {
+  width: 100%;
+  max-width: 188px;
+  margin-left: 20px;
+}
+
+.channel__recommendeds__heading {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+
+.channel__recommendeds__list {
+  list-style-type: none;
+}
+
+.channel__recommendeds__item {
+  margin-bottom: 30px;
+}
+
+.channel__recommendeds__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #19202c;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .popular__video-description {
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .channel__navbar__link {
+    font-size: 14px;
+  }
+
+  .channel__navbar__item:first-child {
+    .channel__navbar__link {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .channel__intro {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .popular__video {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .popular__video__img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .popular__video-description {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+}
