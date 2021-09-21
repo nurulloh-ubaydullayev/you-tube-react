@@ -13,6 +13,11 @@ import Settings3x3 from "../Lib/Svg/settings3x3";
 import BellIcon from "../Lib/Svg/bell";
 
 function Header() {
+  function handleInputSubmit(evt) {
+    evt.preventDefault();
+    evt.target.elements[0].value = null;
+  }
+
   return (
     <div className="header">
       <div className="header__left">
@@ -21,7 +26,7 @@ function Header() {
           <YouTubeLogo />
         </NavLink>
 
-        <form className="header__search-form">
+        <form className="header__search-form" onSubmit={handleInputSubmit}>
           <input className="search-input" type="text" placeholder="Search" />
           <img
             className="header__search-icon"
